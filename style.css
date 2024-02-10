@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+.con {
+    height: 70%;
+    width: 60%;
+    box-shadow: 1px 1px 40px 1px  rgb(107, 107, 107);
+    display: flex;
+    /* position: relative; */
+    background-color: white;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    border-radius: 40px;
+}
+.sec-left {
+    background: linear-gradient(to top , rgb(49, 44, 234) , rgb(114, 87, 228))  ;
+    width: 50%;
+    padding: 3em;
+    /* z-index: 2; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    color: white;
+}
+.sec-left h1 {
+    font-size: 1.9em;
+    color: rgb(206, 200, 255);
+}
+.sec-left .sercil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    height: 12em;
+    width: 12em;
+    background: linear-gradient(to bottom , rgb(73, 33, 205) , rgb(71, 52, 240)) ;
+}
+.sec-left .sercil h3 {
+    font-size: 4em;
+}
+.sec-left .sercil h5 {
+    font-size: 1.1em;
+    font-weight: 400;
+    opacity: .6;
+}
+.sec-left .sercil2 {
+    align-items: center;
+}
+.sec-left .sercil2 h1 {
+    color: white;
+    margin-bottom: 1em;
+    letter-spacing: 2px;
+}
+.sec-left .sercil2 p {
+    /* margin-bottom: 1.3em; */
+    width: 16em;
+    font-size: 1.2em;
+    color: rgb(206, 200, 255);
+
+}
+.sec-right {
+    /* box-shadow: 1px 1px 50px 1px  black; */
+    width: 50%;
+    display: flex;
+    padding: 3em;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: space-evenly;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    /* background-color: rgb(128, 128, 85); */
+}
+.sec-right h1 {
+    color: black;
+    font-weight: 500;
+}
+.sec-right button {
+    padding: 1em 2em;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    background: linear-gradient(to top , rgb(73, 33, 205) , rgb(71, 52, 240)) ;
+    /* transition: all .8 ease; */
+}
+.sec-right button:hover {
+    /* background-color: rgb(46, 56, 84); */
+    background:rgb(46, 56, 84) ;
+
+    /* color: rgb(73, 33, 205);  */
+}
+.sec-right .sec {
+    display: flex;
+    background-color: aqua;
+    padding: 1.4em;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-right .sec div p {
+    color: black;
+    font-weight: 600;
+}
+.sec-right .sec div p span {
+    color: gray;
+
+}
+.sec-right .col1 div h4 {
+    margin-left: 10px;
+    color: red;
+}
+.sec-right .col2 div h4 {
+    margin-left: 10px;
+    color: orange;
+}
+.sec-right .col3 div h4 {
+    margin-left: 10px;
+    color: rgb(2, 155, 2);
+}
+.sec-right .col4 div h4 {
+    margin-left: 10px;
+    color: blue;
+}
+.sec-right .sec div {
+    display:flex;
+}
+.sec-right .col1 {
+    background-color: rgb(255, 246, 245);
+}
+.sec-right .col2 {
+    background-color: rgb(255, 251, 242);
+}
+.sec-right .col3 {
+    background-color: rgb(242, 250, 250);
+}
+.sec-right .col4 {
+    background-color: rgb(243, 243, 253);
+}
+@media (max-width:1185px) {
+    .sec-left,
+    .sec-right {
+        padding: 1em;
+    }
+    .con {
+        width: 80%;
+    }
+ 
+}
+@media (max-width:690px) {
+    .con {
+        width:99%;
+    }
+}
+@media (max-width:570px) {
+    .con {
+        height: 90%;
+        width: 90%;
+        margin: 1em;
+        box-shadow: 1px 1px 40px 1px  rgb(107, 107, 107);
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: white;
+        /* justify-content: space-between; */
+        /* background-color: aqua; */
+        border-radius: 40px;
+        flex-direction: column;
+    }
+    .sec-left,
+    .sec-right {
+        padding: 0;
+        /* margin: 0; */
+        height: 100%;
+        width: 90%;
+        text-align: center;
+    }
+    .sec-left {
+        width: 100%;
+    }
+    .sec-right .sec {
+        padding: .7em;
+    }
+
+}
+@media (max-width:350px) {
+    .sec-left .sercil2 p{
+        font-size: 1em;
+    }
+    .sec-left .sercil {
+        height: 9em;
+        width: 9em;
+
+    }
+} 
+@media (max-height: 776px ) {
+    .sec-right h1 {
+        font-size: 1.2em;
+    }
+    .sec-right button {
+        padding: .5em;
+    }
+    .sec-left .sercil {
+        height: 8em;
+        width: 8em;
+
+    }
+    .sec-left .sercil h3 {
+        font-size: 2.4em;
+    }
+    .sec-left .sercil h5 {
+        font-size: .8em;
+    }
+    .sec-left .sercil2 h1 {
+        font-size: 1.4em;
+    }
+    .sec-left .sercil2 p {
+        font-size: .8em;
+    }
+}
+
